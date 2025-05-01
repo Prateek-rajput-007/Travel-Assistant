@@ -1,4 +1,3 @@
-import 'leaflet/dist/leaflet.css';
 import React from 'react';
 import { ChatProvider } from './contexts/ChatContext';
 import HomePage from './pages/HomePage';
