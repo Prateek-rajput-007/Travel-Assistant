@@ -1,4 +1,5 @@
 import ActivityCard from './ActivityCard';
+import tokyoImage from '../assets/images/japan.jpg'; 
 
 const VisualPanel = ({ activities, confirmed }) => {
   const defaultActivity = {
@@ -6,7 +7,7 @@ const VisualPanel = ({ activities, confirmed }) => {
     city: 'Tokyo',
     title: 'Welcome to Tokyo!',
     description: 'Explore the vibrant city of Tokyo, filled with culture, adventure, and amazing food.',
-    image: 'tokyo.jpg', 
+    image: 'tokyo.jpg',
     type: 'default',
   };
 
@@ -21,6 +22,11 @@ const VisualPanel = ({ activities, confirmed }) => {
         {confirmed ? (
           <div className="h-full flex items-center justify-center p-6 text-center">
             <div className="max-w-lg w-full">
+              <img
+                src={tokyoImage}
+                alt="Tokyo"
+                className="w-full h-48 object-cover rounded-lg mb-4"
+              />
               <h3 className="text-lg font-semibold text-gray-800">
                 Thank you for confirming your itinerary!
               </h3>
