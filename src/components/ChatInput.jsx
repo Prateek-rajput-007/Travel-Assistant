@@ -45,6 +45,7 @@ const ChatInput = () => {
         addMessage(`1. ${tokyoActivity.title} (${tokyoActivity.city}) - ${tokyoActivity.description}`, 'bot');
         addMessage(`2. ${kyotoActivity.title} (${kyotoActivity.city}) - ${kyotoActivity.description}`, 'bot');
         addMessage("Which of these activities appeals to you more?", 'bot');
+        addMessage("Please respond with '1' or '2' to choose one of the suggested activities.", 'bot');
         
         addActivity(tokyoActivity);
         addActivity(kyotoActivity);
