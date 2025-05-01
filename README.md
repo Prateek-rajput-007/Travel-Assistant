@@ -38,11 +38,6 @@ This app demonstrates a 2-column layout:
 
 3. ✅ Final message confirms selections and ends chat with a friendly send-off.
 
----
-
-## 🖼️ Preview
-
-![App Screenshot](./public/screenshot.png) <!-- Replace with an actual screenshot if available -->
 
 ---
 
@@ -93,23 +88,3 @@ npm install
 # Start the development server
 npm run dev
 ```
-
-📍 Visit `http://localhost:5173` in your browser to explore the app.
-
----
-
-## 🤝 Contact
-
-**Prateek Rajput**  
-📧 prprateek30@gmail.com  
-🔗 [LinkedIn](https://linkedin.com/in/prateek-007)  
-📱 +91 9654812384
-
----
-
-## 📄 License
-
-This project is provided for interview and demonstration purposes only.
-```
-
-Would you like me to include Gemini API setup instructions or environment variable configuration too?
