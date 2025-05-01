@@ -1,105 +1,90 @@
 
-```markdown
-# 🌏 Travel Activity Chat – Frontend Assignment
+# ✈️ Travel Activity Chat – React Frontend Assignment
 
-A single-page React app that simulates a travel recommendation chat experience for a young couple visiting Japan (Tokyo and Kyoto) for 4 days. The app mimics a guided travel assistant that offers chat-based recommendations along with visual context like maps and activity cards.
+A modern, single-page React application that simulates a **travel planning chatbot** for a young couple visiting **Tokyo and Kyoto** for a 4-day trip. The app includes an engaging chat interface and a visually rich side panel with maps and activity cards.
 
-## 🚀 Live Demo
-
-👉 [Live App](https://travel-assistant-rho.vercel.app/)  
-📂 [GitHub Repo](https://github.com/Prateek-rajput-007/Travel-Assistant)
+🔗 [Live Demo](https://travel-assistant-rho.vercel.app/)  
+📦 [GitHub Repository](https://github.com/Prateek-rajput-007/Travel-Assistant)
 
 ---
 
-## 📸 Preview
+## 📌 Overview
 
-![App Preview](./public/screenshot.png) <!-- Add an actual screenshot if available -->
-
----
-
-## ✨ Features
-
-- 📱 **Chat interface** simulating a fixed two-step conversation
-- 🗺️ **Visual activity panel** showcasing suggested activities with photos
-- 🎯 Recommendations tailored to user persona (young couple, first-time Japan visit)
-- ✅ Activity confirmation prompt for trip finalization
-- 💬 Clean, interactive layout mimicking a travel assistant
+This app demonstrates a 2-column layout:
+- 💬 **Left Panel**: A simulated travel assistant chat (2–3 step interaction)
+- 🗺️ **Right Panel**: A dynamic visual panel with maps and activity cards based on chat selections
 
 ---
 
-## 👥 User Persona
+## 🎯 Target Persona
 
-- Age: 25–30
-- First-time visitors to Japan
-- Interests: **Adventure**, **Culture**, **History**
-- Open to: Local experiences, festivals, nature-based adventures
-
----
-
-## 💬 Chat Flow
-
-### Step 1:  
-Suggests 2 contrasting activities:
-
-- **Tokyo**: Nighttime Go-Karting in Shibuya *(Adventure + Fun)*
-- **Kyoto**: Tea Ceremony in a historic Gion teahouse *(Culture + History)*
-
-> Asks user which one they prefer.
+- 👩‍❤️‍👨 Couple, aged 25–30  
+- 🌏 First-time visitors to Japan  
+- 💥 Love **adventure**, **culture**, and **history**  
+- 🌸 Interested in **local experiences**, **festivals**, and **nature**
 
 ---
 
-### Step 2:  
-Based on user's choice (e.g., Go-Karting), it shows **3 more matching suggestions** like:
+## 🧩 Interaction Flow
 
-- Hiking Mt. Takao  
-- Participating in a Kimono dress-up session  
-- Visiting the Arashiyama Bamboo Grove
+1. **Step 1**: Assistant recommends 1 unique activity in **Tokyo** and 1 in **Kyoto** based on user interests.
+   - E.g.:
+     - 🏎️ Tokyo: Nighttime Go-Karting in Shibuya *(Adventure + Fun)*
+     - 🍵 Kyoto: Traditional Tea Ceremony in Gion *(Culture + History)*
+   - ➡️ User selects one.
 
-> Asks: _"Would you like to confirm these activities for your trip?"_
+2. **Step 2**: Assistant shares 3 more curated activities and asks:
+   > _"Would you like to confirm these activities for your 4-day trip?"_
 
----
-
-### Step 3:  
-Final message confirms the plan and wishes the couple a great trip!
-
----
-
-## 🧱 Tech Stack
-
-- **React.js** – SPA structure and state management
-- **Tailwind CSS** – Styling and responsive layout
-- **Custom Hooks** – API integration (Gemini / fallback messaging)
-- **Axios** – HTTP request handling
+3. ✅ Final message confirms selections and ends chat with a friendly send-off.
 
 ---
 
-## 📁 Folder Structure
+## 🖼️ Preview
+
+![App Screenshot](./public/screenshot.png) <!-- Replace with an actual screenshot if available -->
+
+---
+
+## ⚙️ Tech Stack
+
+- 🧠 **React.js** – Functional component-based SPA
+- 🎨 **Tailwind CSS** – Modern utility-first styling
+- 🌐 **Axios** – API request management
+- 🔁 **Custom Hooks** – Gemini API wrapper for chatbot response
+
+---
+
+## 📁 Project Structure
 
 ```
-src/
-├── components/
-│   ├── Chat.jsx
-│   ├── ChatInput.jsx
-│   ├── VisualPanel.jsx
-│   └── ActivityCard.jsx
-├── hooks/
-│   └── useGeminiAPI.jsx
-├── assets/
-├── App.jsx
-├── index.js
+Travel-Assistant/
+├── public/
+│   └── screenshot.png
+├── src/
+│   ├── components/
+│   │   ├── Chat.jsx
+│   │   ├── ChatInput.jsx
+│   │   ├── VisualPanel.jsx
+│   │   └── ActivityCard.jsx
+│   ├── hooks/
+│   │   └── useGeminiAPI.jsx
+│   ├── App.jsx
+│   └── main.jsx
+└── package.json
 ```
 
 ---
 
-## 🧪 Run Locally
+## 🧪 Getting Started
 
-To run this project on your machine:
+### 🔄 Clone & Run Locally
 
 ```bash
 # Clone the repository
 git clone https://github.com/Prateek-rajput-007/Travel-Assistant.git
 
-# Navigate to the project directory
+# Navigate into the directory
 cd Travel-Assistant
 
 # Install dependencies
@@ -109,4 +94,22 @@ npm install
 npm run dev
 ```
 
-Then, open [http://localhost:5173](http://localhost:5173) in your browser.
+📍 Visit `http://localhost:5173` in your browser to explore the app.
+
+---
+
+## 🤝 Contact
+
+**Prateek Rajput**  
+📧 prprateek30@gmail.com  
+🔗 [LinkedIn](https://linkedin.com/in/prateek-007)  
+📱 +91 9654812384
+
+---
+
+## 📄 License
+
+This project is provided for interview and demonstration purposes only.
+```
+
+Would you like me to include Gemini API setup instructions or environment variable configuration too?
